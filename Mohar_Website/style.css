@@ -13,7 +13,11 @@
 body.light{
     --bg:#f4f7fb;
     --card:#fff;
-    --text:#111
+    --text:#111827;
+    --text-secondary: #475569;
+    --heading: #087eaf;
+    --border: #dbe4f0;
+    --accent: #24b8ee;
 }
 body{
     font-family:'Space Grotesk',sans-serif;
@@ -362,4 +366,103 @@ footer{
         grid-template-columns:1fr;
     }
 
+}
+
+/* ==============================
+   LIGHT MODE READABILITY FIXES
+   These overrides apply only when body has class="light".
+   ============================== */
+body.light {
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --text: #111827;
+    --text-secondary: #475569;
+    --heading: #087eaf;
+    --border: #dbe4f0;
+    --accent: #24b8ee;
+}
+
+body.light .nav {
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+body.light nav a {
+    color: #1e293b;
+}
+
+body.light .nav a:hover {
+    color: #087eaf;
+}
+
+body.light .glass,
+body.light .cards div,
+body.light .project-card,
+body.light .timeline-card,
+body.light .contact-card {
+    background: #ffffff;
+    color: #172033;
+    border: 1px solid #dbe4f0;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+
+body.light .glass {
+    border-color: #dbe4f0;
+}
+
+body.light h2,
+body.light .section-title,
+body.light .cards h3,
+body.light .contact-card h3 {
+    color: #111827;
+}
+
+body.light .hero p,
+body.light .timeline-card p,
+body.light .timeline-card h4,
+body.light .project-card p,
+body.light .contact-text,
+body.light .contact-card p {
+    color: #475569;
+    opacity: 1;
+}
+
+body.light .timeline-card h3,
+body.light .project-card h3 {
+    color: #087eaf;
+}
+
+body.light .timeline-card span {
+    background: #24b8ee;
+    color: #ffffff;
+}
+
+body.light .contact-card {
+    color: #172033;
+}
+
+body.light .contact-card p {
+    overflow-wrap: anywhere;
+}
+
+body.light footer {
+    color: #64748b;
+    border-top-color: #dbe4f0;
+}
+
+body.light .outline {
+    color: #1e293b;
+    border-color: #3b82f6;
+}
+
+body.light .chip {
+    color: #1e3a8a;
+    background: #dbeafe;
+}
+
+body.light .project-card:hover,
+body.light .cards div:hover,
+body.light .timeline-card:hover,
+body.light .contact-card:hover {
+    border-color: #38bdf8;
 }
